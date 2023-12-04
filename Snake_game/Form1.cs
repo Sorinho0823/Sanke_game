@@ -16,5 +16,7 @@ namespace Snake_game
         {
             InitializeComponent();
         }
+
+
     }
 }
