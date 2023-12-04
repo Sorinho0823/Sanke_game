@@ -53,13 +53,33 @@ namespace Snake_game
 
         private void Form1_KeyDown(object sender, KeyEventArgs e) // 
         {
-            if (e.KeyCode == Keys.W) { directionX = 0; directionY = -1; } // up
-            if (e.KeyCode == Keys.S) { directionX = 0; directionY = 1; } // down
-            if (e.KeyCode == Keys.A) { directionX = -1; directionY = 0; } // left
-            if (e.KeyCode == Keys.D) { directionX = 1; directionY = 0; } // right
+            if (e.KeyCode == Keys.W)
+                if (directionX == 0 && directionY == 1) { }
+                else
+                {
+                    { directionX = 0; directionY = -1; } // up
+                }
+            if (e.KeyCode == Keys.S)
+                if (directionX == 0 && directionY == -1) { }
 
+
+                else { directionX = 0; directionY = 1; } // down
+
+
+            if (e.KeyCode == Keys.A)
+                if (directionX == 1 && directionY == 0) { }
+                else { directionX = -1; directionY = 0; } // left
+
+
+            if (e.KeyCode == Keys.D)
+                if (directionX == -1 && directionY == 0) { } // left)
+                else { directionX = 1; directionY = 0; } // right
         }
-
-
     }
 }
+
+
+
+
+
+
